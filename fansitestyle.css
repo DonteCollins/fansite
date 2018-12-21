@@ -1,0 +1,113 @@
+body {
+	background: black no-repeat url("https://wallpapersite.com/images/pages/pic_w/12809.jpg");
+	background-size: 2880px;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+}
+h1 {
+	font-size: 20px;
+}
+.qu {
+	color: red;
+}
+.doorleft {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -30px;
+	font-size: 100px;
+	background-color: black;
+	float: left;
+	margin-right: -120px;
+	position: absolute;
+	height: 1080px;
+	width: 960px;
+	animation: doorleftanimation 1s;
+	z-index: 2;
+	animation-fill-mode: forwards;
+	font-family: 'Playfair Display SC', serif;
+}
+.doorright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -30px;
+	font-size: 100px;
+	background-color: black;
+	margin-left: 820px;
+	position: absolute;
+	height: 1080px;
+	width: 1200px;
+	animation: doorrightanimation 1s;
+	z-index: 2;
+	animation-fill-mode: forwards;
+	font-family: 'Playfair Display SC', serif;
+}
+.banner img {
+	border: white 5px ridge;
+	filter: grayscale(75%) drop-shadow(0 0 20px gray);
+	height: 281.33px;
+	width: 500px;
+	animation: banneranimation 5s;
+	animation-iteration-count: infinite;
+}
+.nav {
+	border: darkred 5px ridge;
+	padding: .5%;
+	display: flex;
+	justify-content: space-around;
+}
+a:hover {
+	color: red;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.main {
+	border: gray 5px ridge;
+	filter: grayscale(75%) drop-shadow(0 0 20px darkred);
+	background-color: darkred;
+	text-align: center;
+	float: right;
+	padding-right: 25%;
+	padding-left: 25%;
+	transition: 0.5s;
+}
+.main3 {
+	border: gray 5px ridge;
+	filter: grayscale(75%) drop-shadow(0 0 20px darkgreen);
+	background-color: darkgreen;
+	text-align: center;
+	margin-left: 200px;
+	padding-right: 25%;
+	padding-left: 25%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	width: 430px;
+	transition: 0.5s;
+}
+.main:hover {
+	text-shadow: 0 10px 30px white;
+	margin-top: -25px;
+}
+.main3:hover {
+	text-shadow: 0 10px 30px white;
+	margin-top: -25px;
+}
+@keyframes banneranimation {
+	50% {filter: grayscale(100%) drop-shadow(0 0 50px gray)};
+}
+@keyframes doorleftanimation {
+	100% {margin-left: -1000px};
+}
+@keyframes doorrightanimation {
+	100% {margin-left: 2000px};
+}
+a {
+	color: yellow;
+	transition: 0.5s;
+}
+a:hover {
+	color: orange;
+}
